@@ -1,11 +1,15 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
-	"organizeImports": { "enabled": true },
+	"organizeImports": {
+		"enabled": true
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
 			"recommended": false,
-			"a11y": { "noBlankTarget": "off" },
+			"a11y": {
+				"noBlankTarget": "off"
+			},
 			"complexity": {
 				"noExtraBooleanCast": "error",
 				"noMultipleSpacesInRegularExpressionLiterals": "error",
@@ -41,7 +45,9 @@
 				"useValidForDirection": "error",
 				"useYield": "error"
 			},
-			"security": { "noDangerouslySetInnerHtmlWithChildren": "error" },
+			"security": {
+				"noDangerouslySetInnerHtmlWithChildren": "error"
+			},
 			"suspicious": {
 				"noAsyncPromiseExecutor": "error",
 				"noCatchAssign": "error",
@@ -69,6 +75,9 @@
 				"useValidTypeof": "error"
 			}
 		},
-		"ignore": ["**/dist", "**/.eslintrc.cjs"]
+		"ignore": [
+			"**/dist",
+			"**/.eslintrc.cjs"
+		]
 	}
 }
