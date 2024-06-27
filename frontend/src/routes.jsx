@@ -1,30 +1,31 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Dashboard, Login, TableDashboard } from "./pages";
-import { Tarefas } from "./pages/Tarefas";
+import { Dashboard } from "./pages/dashboard";
+import { Login } from "./pages/Login";
+import { TableDashboard } from "./pages/ClientDashboard";
 
-export const routes = createBrowserRouter([
+export const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Login />,
 	},
+
 	{
 		path: "/dashboard/:id",
 		element: <Dashboard />,
 	},
+
 	{
 		path: "/usuarios/:id",
-		element: <TableDashboard title={"Usuários"} />,
+		element: <TableDashboard />,
 	},
+
 	{
 		path: "/funcionarios/:id",
-		element: <TableDashboard title={"Funcionários"} />,
+		element: <TableDashboard />,
 	},
+
 	{
 		path: "/clientes/:id",
-		element: <TableDashboard title={"Clientes"} />,
-	},
-	{
-		path: "/tarefas/:id",
-		element: <Tarefas />,
-	},
+		element: <TableDashboard />,
+	}
 ]);
